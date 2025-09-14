@@ -13,7 +13,7 @@ final class Config {
     public const SHOW_HIDDEN = 'hidden';
     public const FOLLOW_SYMLINKS = false;
     public const ENABLE_DOWNLOADS = true;
-    public const ENABLE_UPLOADS = true; // Set to true to enable uploads
+    public const ENABLE_UPLOADS = false; // Set to true to enable uploads
     public const MAX_UPLOAD_SIZE = 10485760; // 10MB
     public const TIMEZONE = 'UTC';
     public const ITEMS_PER_PAGE = 100; // Pagination support
@@ -674,4 +674,5 @@ $csrfToken = $_SESSION['csrf_token'];
         document.querySelectorAll('a, button, th[data-sort]').forEach(el => { el.addEventListener('mousedown', () => el.style.transform = 'scale(0.98)'); el.addEventListener('mouseup', () => el.style.transform = ''); el.addEventListener('mouseleave', () => el.style.transform = ''); });
     </script>
 </body>
+
 </html>
